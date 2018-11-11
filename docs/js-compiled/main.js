@@ -7048,6 +7048,7 @@ var author$project$Main$viewButton2 = F4(
 				]));
 	});
 var elm$core$Debug$toString = _Debug_toString;
+var elm$html$Html$a = _VirtualDom_node('a');
 var elm$html$Html$div = _VirtualDom_node('div');
 var elm$html$Html$h1 = _VirtualDom_node('h1');
 var elm$html$Html$h2 = _VirtualDom_node('h2');
@@ -7061,6 +7062,12 @@ var elm$html$Html$Attributes$stringProperty = F2(
 			key,
 			elm$json$Json$Encode$string(string));
 	});
+var elm$html$Html$Attributes$href = function (url) {
+	return A2(
+		elm$html$Html$Attributes$stringProperty,
+		'href',
+		_VirtualDom_noJavaScriptUri(url));
+};
 var elm$html$Html$Attributes$src = function (url) {
 	return A2(
 		elm$html$Html$Attributes$stringProperty,
@@ -7092,6 +7099,23 @@ var author$project$Main$view = function (model) {
 				_List_fromArray(
 					[
 						elm$html$Html$text('Mocking api module. This module allow to mock APIs without installing external tool or servers. It is enough to load resposnes saved as json files.')
+					])),
+				A2(
+				elm$html$Html$p,
+				_List_Nil,
+				_List_fromArray(
+					[
+						elm$html$Html$text('Source code: '),
+						A2(
+						elm$html$Html$a,
+						_List_fromArray(
+							[
+								elm$html$Html$Attributes$href('https://github.com/lucamug/http-boxed')
+							]),
+						_List_fromArray(
+							[
+								elm$html$Html$text('https://github.com/lucamug/http-boxed')
+							]))
 					])),
 				A2(
 				elm$html$Html$p,
@@ -7489,14 +7513,7 @@ var elm$browser$Debugger$Overlay$viewProblemType = function (_n0) {
 					A2(elm$core$List$map, elm$browser$Debugger$Overlay$problemToString, problems)) + '.'))
 			]));
 };
-var elm$html$Html$a = _VirtualDom_node('a');
 var elm$html$Html$ul = _VirtualDom_node('ul');
-var elm$html$Html$Attributes$href = function (url) {
-	return A2(
-		elm$html$Html$Attributes$stringProperty,
-		'href',
-		_VirtualDom_noJavaScriptUri(url));
-};
 var elm$browser$Debugger$Overlay$viewBadMetadata = function (_n0) {
 	var message = _n0.message;
 	var problems = _n0.problems;

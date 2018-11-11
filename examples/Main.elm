@@ -172,6 +172,12 @@ view model =
     Html.div []
         [ Html.h1 [] [ Html.text "Http.Boxed" ]
         , Html.p [] [ Html.text "Mocking api module. This module allow to mock APIs without installing external tool or servers. It is enough to load resposnes saved as json files." ]
+        , Html.p []
+            [ Html.text "Source code: "
+            , Html.a
+                [ Html.Attributes.href "https://github.com/lucamug/http-boxed" ]
+                [ Html.text "https://github.com/lucamug/http-boxed" ]
+            ]
         , Html.p [] [ Html.text "Click the buttons below for usage examples." ]
         , Html.div []
             [ Html.div
