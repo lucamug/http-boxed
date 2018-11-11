@@ -1,0 +1,8 @@
+{
+  "name": "http-boxed",
+  "version": "1.0.0",
+  "description": "http-boxed is an Elm library to test http reposnses locally",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {}
+}

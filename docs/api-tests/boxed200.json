@@ -1,0 +1,9 @@
+{
+    "url": "",
+    "status": {
+        "code": 200,
+        "message": "200"
+    },
+    "headers": {},
+    "body": "{\"data\": {\"image_url\": \"ciao\"}}"
+}
